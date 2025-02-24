@@ -19,6 +19,7 @@ export default function App() {
   return (
     <div className="p-4 max-w-md mx-auto bg-gray-100 rounded-xl shadow-md">
       <h2 className="text-lg font-bold">String Calculator</h2>
+      <h3 className="text-lg font-bold">Add number for adding with comma in the input below</h3>
       <input
         type="text"
         className="w-full p-2 border rounded my-2"
@@ -30,7 +31,7 @@ export default function App() {
         className="bg-blue-500 text-white px-4 py-2 rounded"
         onClick={handleCalculate}
       >
-        Calculate
+        Add
       </button>
       {error && <p className="text-red-500 mt-2">{error}</p>}
       {result !== null && <p className="text-green-600 mt-2">Result: {result}</p>}
